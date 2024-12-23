@@ -11,7 +11,7 @@ from keras.api.models import Sequential
 epochs=100
 learning_rate=1e-3
 
-data = pd.read_csv("/home/cchampou/dev/AI/train.csv", sep=",")
+data = pd.read_csv("./train.csv", sep=",")
 
 print(data.head())
 
