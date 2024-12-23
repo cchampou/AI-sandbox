@@ -1,4 +1,3 @@
-from keras.src.layers.preprocessing.tf_data_layer import keras
 import tensorflow as tf
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -59,7 +58,7 @@ model = Sequential([
     Dense(1)
     ], name="car_price")
 
-model.compile(optimizer=keras.optimizers.Adam(
+model.compile(optimizer=Adam(
     learning_rate=learning_rate
     ), loss=MeanAbsoluteError(),metrics=[RootMeanSquaredError()])
 model.summary()
